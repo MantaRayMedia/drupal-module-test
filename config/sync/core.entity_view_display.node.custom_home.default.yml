@@ -1,0 +1,28 @@
+uuid: 584eec83-7708-4b0d-9259-47ea4698dad9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.custom_home.body
+    - node.type.custom_home
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: JT4kGQD6nGzWgJWaVxTzvw4Pg_hI4QG8eQqvIMMNU8M
+id: node.custom_home.default
+targetEntityType: node
+bundle: custom_home
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

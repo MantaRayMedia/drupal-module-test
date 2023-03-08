@@ -1,0 +1,16 @@
+uuid: 1122c3f5-bcb1-4240-b780-e69f247081a3
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - fun
+_core:
+  default_config_hash: GReYl0v4Yg3PH7Zt2cVfDVNUgXsXvRjLPSAV-Bz_FMw
+name: 'Custom Home'
+type: custom_home
+description: 'Content type for custom Home'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

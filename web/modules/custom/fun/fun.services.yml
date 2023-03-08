@@ -1,0 +1,5 @@
+services:
+  twig_camelcase.twig_extension:
+    class: Drupal\fun\Service\CamelcaseTextService
+    tags:
+      - { name: twig.extension }
