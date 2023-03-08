@@ -1,0 +1,22 @@
+<?php
+
+function fun_page_attachments(array &$page) {
+  $all_roles = \Drupal::currentUser()->getRoles();
+
+  if (!in_array("limited", $all_roles)) {
+    return;
+  }
+
+  $page['#attached']['library'][] = 'fun/fun';
+}
+
+function fun_theme($existing, $type, $theme, $path) {
+    return [
+      'fun_template' => [
+        'variables' => ['fun_title' => NULL,
+                        'fun_admin_description' => NULL,
+                        'has_admin_role' => NULL,
+                        'is_anonymous' => NULL],
+      ],
+    ];
+  }

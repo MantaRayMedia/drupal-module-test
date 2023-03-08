@@ -1,0 +1,24 @@
+# core.entity_view_display.node.custom_home.default.yml
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.field.node.custom_home.body
+        - node.type.custom_home
+    module:
+        - text
+        - user
+id: node.custom_home.default
+targetEntityType: node
+bundle: custom_home
+mode: default
+content:
+    body:
+        label: hidden
+        type: text_default
+        weight: 101
+        settings: {  }
+        third_party_settings: {  }
+    links:
+        weight: 100
+hidden: {  }

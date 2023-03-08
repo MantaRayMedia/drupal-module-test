@@ -1,0 +1,11 @@
+
+{% if is_anonymous %}
+    <p>You should login to see creation of the 'fun_time' module :)</p>
+{% else %}
+
+    <h1 class="change_colour"> {{ fun_title }}</h1>
+
+    {% if has_admin_role %}
+       <p>{{ fun_admin_description | camelcase }}</p>
+    {% endif %}
+{% endif %}

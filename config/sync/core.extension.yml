@@ -15,8 +15,10 @@ module:
   editor: 0
   field: 0
   field_group: 0
+  field_ui: 0
   file: 0
   filter: 0
+  fun: 0
   image: 0
   link: 0
   media: 0

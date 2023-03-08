@@ -1,0 +1,25 @@
+uuid: 55f3324b-2dc5-4b4b-b539-5e0a2ea9915a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.custom_home
+  module:
+    - text
+_core:
+  default_config_hash: CGYZTfF2OiaaQLAMTSz1yizb41HtQSLCN5SINCk6HcE
+id: node.custom_home.body
+field_name: body
+entity_type: node
+bundle: custom_home
+label: Header
+description: 'H1 header for custom home'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

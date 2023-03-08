@@ -1,0 +1,16 @@
+fun.show_h1:
+  path: '/fun/page'
+  defaults:
+    _controller: '\Drupal\fun\Controller\FunController:content'
+    _title: 'Controller Routing title'
+  requirements: 
+    _permission: 'access content'
+    _access: 'TRUE'
+
+fun.config_form:
+  path: '/admin/config/fun/settings'
+  defaults:
+    _form: '\Drupal\fun\Form\CustomForm'
+    _title: 'Form routing title'
+  requirements:
+    _permission: 'administer content'
